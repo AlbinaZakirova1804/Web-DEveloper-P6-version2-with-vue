@@ -12,7 +12,7 @@ const Sauce = require('../models/sauce');
 router.post('/', auth, multer, SauceCtrl.createSauce); //add auth
 
 //retrieving the list of sauces
-router.get('/', auth, SauceCtrl.viewAllSauces);//add auth
+router.get('/', /*auth,*/ SauceCtrl.viewAllSauces);//add auth
 
 //retrieve only one particular sauce
 router.get('/:id', auth, SauceCtrl.viewSauce);//add auth
