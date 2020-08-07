@@ -14,8 +14,8 @@ Vue.use(VueRouter)
   },
   
   {
-    path: '/sauces',
-    mane: 'Sauces',
+    path: '/api/sauces',
+    name: 'Sauces',
     component: Sauces
   },
 

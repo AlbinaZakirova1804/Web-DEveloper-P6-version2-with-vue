@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 const path = require('path');
-//const cors = require('cors');
+const cors = require('cors');
 
 
 const sauceRoutes = require('./routes/sauce');
@@ -25,6 +25,7 @@ mongoose.connect('mongodb://zak1804:1234@cluster0-shard-00-00-ejyrz.mongodb.net:
 });
 //
 
+//app.use(cors());
 app.use(bodyParser.json());
 
 
